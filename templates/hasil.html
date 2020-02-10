@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Result</title>
+    <style>
+    body {
+        background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/33f87af1-69a0-4629-856b-bcd83431548e/d4o49yb-f6ce0e46-18c7-4b95-8604-dfc301eb506b.png/v1/fill/w_1192,h_670,q_70,strp/battle_bases_01bg_hd_by_xalien95_d4o49yb-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcLzMzZjg3YWYxLTY5YTAtNDYyOS04NTZiLWJjZDgzNDMxNTQ4ZVwvZDRvNDl5Yi1mNmNlMGU0Ni0xOGM3LTRiOTUtODYwNC1kZmMzMDFlYjUwNmIucG5nIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.gc-16ypsSYMBRgthTyYLCBYxncIPgCFKDnKmSTxGZbA");
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    center {
+        display: block;
+        margin-left: 50%;
+        margin-right: 50%;
+        }
+    div{
+        font-family: "Tahoma";
+        font-size: 16px;
+        margin: 10px;
+        text-align: center;
+        color: #0b416f;
+        font-weight: 500;}
+    </style>
+</head>
+<body>
+
+    <div style = "top:190px; width: 1200px; height: 100px; background-color: #FFF5C5;">
+        <b>Your Favorite Pokemon:</b><br>
+        <img src= {{urlp0}} alt="Pokemon Favorit" height="120" width="140" style="float:left;"/>
+        <br>{{ favpoke }}, <br> {{ poketype }}, {{ pokegen }}, {{ pokelegend }}</div>
+    
+    <div style="top:300px; width: 1200px; height: 40px; background-color: #C0DDFF;"> <b>Check out these other awesome pokemons!:  </b></div>
+   
+    <div style ="top:350px; width: 400px; height: 130px; background-color: #FFF5C5; float:left;">
+        <img src= {{urlp1}} alt="Rekomenasi1" height="150" width="170" style="float:left;"/>
+        <br><br>{{ p1name }}, <br> {{ p1type }}, {{ p1gen }}, {{ p1legend }}</div>   
+    <div style ="top:350px; width: 400px; height: 130px; background-color: #FFF5C5; float:right;">
+        <img src= {{urlp2}} alt="Rekomenasi1" height="150" width="170" style="float:left;"/>
+        <br><br>{{ p2name }}, <br> {{ p2type }}, {{ p2gen }}, {{ p2legend }}</div>   
+    <div style ="top:500px; width: 400px; height: 130px; background-color: #FFF5C5; float:left;">
+        <img src= {{urlp3}} alt="Rekomenasi1" height="150" width="170" style="float:left;"/>
+        <br><br>{{ p3name }}, <br> {{ p3type }}, {{ p3gen }}, {{ p3legend }}</div>   
+    <div style ="top:500px; width: 400px; height: 130px; background-color: #FFF5C5; float:right;">
+        <img src= {{urlp4}} alt="Rekomenasi1" height="150" width="170" style="float:left;"/>
+        <br><br>{{ p4name }}, <br> {{ p4type }}, {{ p4gen }}, {{ p4legend }}</div>   
+    <div style ="top:650px; width: 400px; height: 130px; background-color: #FFF5C5; float:left;">
+        <img src= {{urlp5}} alt="Rekomenasi1" height="150" width="170" style="float:left;"/>
+        <br><br>{{ p5name }}, <br> {{ p5type }}, {{ p5gen }}, {{ p5legend }}</div>   
+    <div style ="top:650px; width: 400px; height: 130px; background-color: #FFF5C5; float:right;">
+        <img src= {{urlp6}} alt="Rekomenasi1" height="150" width="170" style="float:left;"/>
+        <br><br>{{ p6name }}, <br> {{ p6type }}, {{ p6gen }}, {{ p6legend }}</div>   
+
+    <center><form method="POST" action="http://localhost:5000/" style="position:fixed; top:550px;">
+        <button><input type = "submit" value = "Again!" /></button> 
+        </form></center>
+    
+</body>
+</html>

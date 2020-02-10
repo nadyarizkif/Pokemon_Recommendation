@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Battle!</title>
+    <style>
+        body {
+            background-image: url("https://mcdn.wallpapersafari.com/medium/89/48/Ph6EHu.png");
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        tex {
+          color: wblack;
+          font-family: "Arial Black";
+          font-size: 30px;
+          font-weight: normal;
+          text-shadow: 4px 4px 4px whitesmoke;;
+        }
+        center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        input {
+            background-color: lemonchiffon
+            height: 40px;
+            width:200px;
+            font-family: "Arial Black";
+            font-size: 20px;
+            border: none; 
+        }
+        button {
+            width: 100%;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            border-radius: 12px;
+            border:2px solid #f44336;
+            background-color: lemonchiffon;
+        }
+    </style>
+</head>
+<body>
+    <br><br><br><br>
+    <center><img src="https://pluspng.com/img-png/pokemon-logo-png-pokemon-logo-png-2000.png" alt="Pokemon" height="250" width="600"></center>
+    <br><br><br>
+    <center><form method="POST" action="http://localhost:5000/hasil">
+        <tex>Look up your Favorite Pokemon:</tex> <input type = "string" name= "pokename" 
+        placeholder= "pokemon..."/>
+        <br><br><br>
+       <button><input type = "submit" value = "Search!" /></button> 
+    </form></center>
+</body>
+</html>
